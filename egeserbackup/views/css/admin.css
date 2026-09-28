@@ -1,0 +1,106 @@
+/**
+ * Egeser Full Backup - back office styles (PrestaShop 1.7 bootstrap admin theme)
+ */
+#egeser-backup-app .egb-checks .egb-check-icon {
+  width: 30px;
+  text-align: center;
+}
+
+#egeser-backup-app .egb-status-label {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+#egeser-backup-app .egb-progress {
+  height: 26px;
+  margin-bottom: 15px;
+}
+
+#egeser-backup-app .egb-progress .progress-bar {
+  line-height: 26px;
+  font-weight: 600;
+  min-width: 3em;
+  transition: width 0.4s ease;
+}
+
+#egeser-backup-app .egb-stat {
+  border: 1px solid #e5e8ea;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  background: #fafbfc;
+}
+
+#egeser-backup-app .egb-stat-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #6c868e;
+}
+
+#egeser-backup-app .egb-stat-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #363a41;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#egeser-backup-app .egb-counters {
+  margin: 5px 0 12px;
+}
+
+#egeser-backup-app .egb-counters strong {
+  font-size: 15px;
+}
+
+#egeser-backup-app .egb-current code {
+  word-break: break-all;
+}
+
+#egeser-backup-app .egb-actions {
+  margin: 15px 0;
+}
+
+#egeser-backup-app .egb-actions .btn {
+  margin: 0 6px 6px 0;
+}
+
+#egeser-backup-app .egb-issues-scroll {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #e5e8ea;
+}
+
+#egeser-backup-app .egb-issues-scroll td {
+  word-break: break-all;
+}
+
+#egeser-backup-app .egb-part + .egb-part {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #e5e8ea;
+}
+
+#egeser-backup-app .egb-hash code {
+  font-size: 11px;
+  word-break: break-all;
+}
+
+#egeser-backup-app .egb-row-actions .btn {
+  margin: 0 0 4px 4px;
+}
+
+#egeser-backup-app .egb-log {
+  max-height: 300px;
+  overflow: auto;
+  font-size: 11px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+#egeser-backup-app #egb-completed-body code {
+  word-break: break-all;
+}

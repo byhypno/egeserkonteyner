@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>egeserbackup</name>
+    <displayName><![CDATA[Egeser Full Backup]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Site dosyalarının tamamını Back Office üzerinden, AJAX batch sistemiyle güvenli biçimde ZIP olarak yedekler (dosya sistemi yedeği).]]></description>
+    <author><![CDATA[Egeser]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
