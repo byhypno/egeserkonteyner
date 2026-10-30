@@ -122,7 +122,7 @@ $eg112_linkedin_footer = 'https://tr.linkedin.com/company/egeser-konteyner-prefa
 <div class="eg112-mobilebar">
   <a href="<?php echo $eg112_phone_href_footer; ?>">ARA</a>
   <?php if (!empty($egeser_whatsapp)) { ?>
-    <a class="wa" href="https://wa.me/<?php echo htmlspecialchars($egeser_whatsapp, ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+    <a class="wa" href="https://wa.me/<?php echo htmlspecialchars($egeser_whatsapp, ENT_QUOTES, 'UTF-8'); ?>?text=<?php echo rawurlencode('Merhaba Egeser Prefabrik, prefabrik yapı modelleriniz ve fiyatları hakkında bilgi almak istiyorum.'); ?>" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
   <?php } else { ?>
     <a class="wa" href="<?php echo $eg112_contact_footer; ?>">İLETİŞİM</a>
   <?php } ?>

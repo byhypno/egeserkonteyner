@@ -174,6 +174,11 @@ class ControllerProductCategory extends Controller {
 			);
 
 			if ($category_info['image']) {
+				// EGESER - Paylasim onizlemesinde logo yerine kategori gorseli.
+				$this->document->setImage($this->model_tool_image->resize($category_info['image'], 1200, 630));
+			}
+
+			if ($category_info['image']) {
 				$data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
 			} else {
 				$data['thumb'] = '';
@@ -306,43 +311,7 @@ class ControllerProductCategory extends Controller {
 				'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=pd.name&order=DESC' . $url)
 			);
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_asc'),
-				'value' => 'p.price-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=p.price&order=ASC' . $url)
-			);
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_desc'),
-				'value' => 'p.price-DESC',
-				'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=p.price&order=DESC' . $url)
-			);
-
-			if ($this->config->get('config_review_status')) {
-				$data['sorts'][] = array(
-					'text'  => $this->language->get('text_rating_desc'),
-					'value' => 'rating-DESC',
-					'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=rating&order=DESC' . $url)
-				);
-
-				$data['sorts'][] = array(
-					'text'  => $this->language->get('text_rating_asc'),
-					'value' => 'rating-ASC',
-					'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=rating&order=ASC' . $url)
-				);
-			}
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_model_asc'),
-				'value' => 'p.model-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=p.model&order=ASC' . $url)
-			);
-
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_model_desc'),
-				'value' => 'p.model-DESC',
-				'href'  => $this->url->link('product/category', 'path=' . (int)$category_id . '&sort=p.model&order=DESC' . $url)
-			);
+			// EGESER - Fiyatlar proje bazli ve urun yorumu yok; fiyat, oylama ve urun kodu siralamalari kaldirildi.
 
 			$url = '';
 

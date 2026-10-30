@@ -1562,7 +1562,7 @@ unset($eh13_graph_item);
       <?php if ($eh12_hero_image) { ?>
         <img src="<?php echo htmlspecialchars($eh12_hero_image, ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($eh12_hero_name, ENT_QUOTES, 'UTF-8'); ?>" width="780" height="585" fetchpriority="high" decoding="async">
       <?php } else { ?>
-        <div class="eh12-hero-media__placeholder"><div><strong>Ana proje görseli</strong><span>Öne çıkan ürün görseli eklendiğinde otomatik kullanılır.</span></div></div>
+        <div class="eh12-hero-media__placeholder" aria-hidden="true"></div>
       <?php } ?>
 
       <div class="eh12-hero-card">
@@ -1587,10 +1587,10 @@ unset($eh13_graph_item);
 
 <section class="eh12-stats">
   <div class="eh12-container eh12-stats__grid">
-    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="8" data-eh12-suffix="+">0</span><span class="eh12-stats__label">Yıllık Tecrübe<br>(2018'den beri)</span></div>
-    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="42" data-eh12-suffix=" M²">0</span><span class="eh12-stats__label">Ortalama Günlük<br>Modüler Yapı Üretimi</span></div>
-    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="4" data-eh12-suffix="+">0</span><span class="eh12-stats__label">Aylık Prefabrik Ev<br>Kurulumu (min. 80 m²)</span></div>
-    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="233" data-eh12-suffix="+">0</span><span class="eh12-stats__label">Google<br>Değerlendirmesi</span></div>
+    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="8" data-eh12-suffix="+">8+</span><span class="eh12-stats__label">Yıllık Tecrübe<br>(2018'den beri)</span></div>
+    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="42" data-eh12-suffix=" M²">42 M²</span><span class="eh12-stats__label">Ortalama Günlük<br>Modüler Yapı Üretimi</span></div>
+    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="4" data-eh12-suffix="+">4+</span><span class="eh12-stats__label">Aylık Prefabrik Ev<br>Kurulumu (min. 80 m²)</span></div>
+    <div class="eh12-stats__item"><span class="eh12-stats__num" data-eh12-count="233" data-eh12-suffix="+">233+</span><span class="eh12-stats__label">Google<br>Değerlendirmesi</span></div>
   </div>
 </section>
 <script>
